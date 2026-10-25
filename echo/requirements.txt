@@ -1,0 +1,28 @@
+# ECHO - Python dependencies (CPU only, no GPU / CUDA / paid API needed)
+#
+# Target: Python 3.11 or 3.12, 64-bit (Windows, macOS or Linux).
+#   * TensorFlow 2.16 ships wheels for Python 3.9-3.12 and needs numpy < 2.
+#   * Native Windows also needs the "Microsoft Visual C++ Redistributable"
+#     (see README, Troubleshooting).
+#
+# Install with:   pip install -r requirements.txt
+
+# --- deep learning ---------------------------------------------------------
+tensorflow==2.16.2
+keras>=3.0,<3.6
+numpy==1.26.4
+
+# --- music / MIDI ----------------------------------------------------------
+pretty_midi==0.2.10
+mido==1.2.10
+# pretty_midi 0.2.10 imports `pkg_resources`, which setuptools 81+ removed and
+# which a fresh Python 3.12 virtual environment does not include at all.
+setuptools>=65,<81
+
+# --- interface, data and charts -------------------------------------------
+streamlit==1.40.2
+pandas==2.2.2
+matplotlib==3.9.2
+
+# --- tests -----------------------------------------------------------------
+pytest==8.3.3
