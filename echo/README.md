@@ -1,3 +1,7 @@
+Demo Link :https://echoai-2rqdtu4fehtsjetazmdjog.streamlit.app/
+
+
+
 # ECHO — Intelligent Music Generation Studio
 
 > *Every note leaves an echo.*
